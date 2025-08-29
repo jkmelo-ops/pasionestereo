@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Radio Pasión Stereo</title>
+  <style>
+    .player {
+      width: 100%;
+      max-width: 400px;
+      margin: 30px auto;
+      text-align: center;
+      background: #222;
+      padding: 20px;
+      border-radius: 12px;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+    }
+    .player button {
+      background: #e91e63;
+      border: none;
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .player button:hover {
+      background: #ff4081;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="player">
+    <h2>🎧 Pasión Stereo</h2>
+    <audio id="radio" src="http://uk17freenew.listen2myradio.com:26319/;stream.mp3"></audio>
+    <button onclick="document.getElementById('radio').play()">▶️ Play</button>
+    <button onclick="document.getElementById('radio').pause()">⏸️ Pausa</button>
+  </div>
+
+</body>
+</html>
